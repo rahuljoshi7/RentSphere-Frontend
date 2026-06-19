@@ -1,0 +1,7 @@
+// src/services/authService.js
+import api from './axios'
+
+export const authService = {
+  register: (data)  => api.post('/auth/register', data),
+  login:    (data)  => api.post('/auth/login', data)
+}
